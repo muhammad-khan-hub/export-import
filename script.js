@@ -2,7 +2,7 @@ let mobile_menu=document.querySelector(".mobile_menu");
 let mobile_menu_list=document.querySelectorAll(".mobile_menu_list")
 let open=document.querySelector(".open");
 let close=document.querySelector(".close");
-let header=document.querySelector("header");
+
 
 open.addEventListener("click",()=>{
 mobile_menu.classList.remove("hidden")
@@ -16,11 +16,3 @@ mobile_menu_list.forEach((elem) => {
   })
 });
 
-
-window.addEventListener("scroll", () => {
- if(window.scrollY > 50){
-  header.classList.add("fixed")
- }else{
-  header.classList.remove("fixed")
- }
-})
